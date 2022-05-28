@@ -1,4 +1,4 @@
-package announcement;
+package Messages;
 
 public class TaskAddedMobileMessage {
 

@@ -1,12 +1,10 @@
-package session;
-
 import java.util.ArrayList;
 
-import communication.EmailGateway;
-import announcement.TaskAddedEmailMessage;
-import consumer.Professor;
-import consumer.Student;
-import consumer.TA;
+import Gateways.EmailGateway;
+import Messages.TaskAddedEmailMessage;
+import Users.Professor;
+import Users.Student;
+import Users.TA;
 
 public class Course {
 	

@@ -1,4 +1,4 @@
-package consumer;
+package Users;
 
 public class Student {
 	String name;
