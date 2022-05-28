@@ -1,4 +1,4 @@
-package Messages;
+package announcement;
 
 public class DailyNewsMobileMessage {
 	
