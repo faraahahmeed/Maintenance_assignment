@@ -6,7 +6,7 @@ import announcement.TaskAddedMobileMessage;
 
 public class SMSGateway {
 	
-	public void sendMessage(Object message) {
+	public void sendMessage(Object message, String user) {
 		String[] placeHolders = new String[] {}; // set some place holders here 
 		
 		if(message instanceof DailyNewsMobileMessage) {

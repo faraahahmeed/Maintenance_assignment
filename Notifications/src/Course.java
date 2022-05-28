@@ -73,7 +73,7 @@ public class Course {
 	
 	
 	
-	public void addAssignment(String assignName, String assignBody) {
+	public void AddAssignment(String assignName, String assignBody) {
 		announcements.add(assignName);
 		String[] placeholders = new String[] {assignName, assignBody};
 		// do some logic here 
@@ -95,17 +95,17 @@ public class Course {
 		
 		for (Professor professor : professorsForEmailNotification) {
 			professor.notifyProfessor(notification);
-			emailGateway.sendMessage(notification);
+			emailGateway.sendMessage(notification, professor.getEmail());
 		}
 		
 		for (TA ta : tasForEmailNotification) {
 			ta.notifyTA(notification);
-			emailGateway.sendMessage(notification);
+			emailGateway.sendMessage(notification, ta.getEmail());
 		}
 		
 		for (Student student : studentsForSMSNotification) {
 			student.notifyStudent(notification);
-			emailGateway.sendMessage(notification);
+			emailGateway.sendMessage(notification, student.getEmail());
 		}
 	}
 	
