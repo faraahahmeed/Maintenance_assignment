@@ -10,36 +10,23 @@ public class Course {
 	
 	String name;
 	String code;
-	ArrayList<String> announcements;
-	ArrayList<String> exams;
-	ArrayList<String> grades;
+	ArrayList<String> announcements = new ArrayList<>();
+	ArrayList<String> exams = new ArrayList<>();
+	ArrayList<String> grades = new ArrayList<>();
 	
-	ArrayList<Professor> professorsForEmailNotification;
-	ArrayList<Professor> professorsForSMSNotification;
+	ArrayList<Professor> professorsForEmailNotification = new ArrayList<>();
+	ArrayList<Professor> professorsForSMSNotification = new ArrayList<>();
 	
-	ArrayList<TA> TAsForEmailNotification;
-	ArrayList<TA> TAsForSMSNotification;
+	ArrayList<TA> tasForEmailNotification = new ArrayList<>();
+	ArrayList<TA> tasForSMSNotification = new ArrayList<>();
 	
-	ArrayList<Student> studentsForEmailNotification;
-	ArrayList<Student> studentsForSMSNotification;
+	ArrayList<Student> studentsForEmailNotification = new ArrayList<>();
+	ArrayList<Student> studentsForSMSNotification = new ArrayList<>();
 	
 	public Course(String name, String code) {
 		super();
 		this.name = name;
 		this.code = code;
-		
-		announcements = new ArrayList<String>();
-		exams = new ArrayList<String>();
-		grades = new ArrayList<String>();
-		
-		professorsForEmailNotification = new ArrayList<Professor>();
-		professorsForSMSNotification = new ArrayList<Professor>();
-		
-		TAsForEmailNotification = new ArrayList<TA>();
-		TAsForSMSNotification = new ArrayList<TA>();
-		
-		studentsForEmailNotification = new ArrayList<Student>();
-		studentsForSMSNotification = new ArrayList<Student>();
 	}
 
 	public String getName() {
@@ -67,11 +54,11 @@ public class Course {
 	}
 	
 	public void subscribeTAForEmailNotification(TA ta) {
-		TAsForEmailNotification.add(ta);
+		tasForEmailNotification.add(ta);
 	}
 	
 	public void subscribeTAForSMSNotification(TA ta) {
-		TAsForSMSNotification.add(ta);
+		tasForSMSNotification.add(ta);
 	}
 	
 	public void subscribeStudentForEmailNotification(Student student) {
@@ -109,7 +96,7 @@ public class Course {
 			emailGateway.sendMessage(notification, professor.getEmail());
 		}
 		
-		for (TA ta : TAsForEmailNotification) {
+		for (TA ta : tasForEmailNotification) {
 			ta.notifyTA(notification);
 			emailGateway.sendMessage(notification, ta.getEmail());
 		}
