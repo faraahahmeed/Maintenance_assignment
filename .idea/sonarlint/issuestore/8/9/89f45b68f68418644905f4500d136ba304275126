@@ -1,0 +1,24 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÑøÀ¿ûÿÿÿÿ
+o
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(¯Ô„İ
+t
+java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(îÒ¶ÿÿÿÿÿ
+t
+java:S2293#"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡ûßàıÿÿÿÿ
+o
+java:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(Æˆ¢Ğ
+o
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸ÙÊ
+t
+java:S2293'"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßÛÌßşÿÿÿÿ
+t
+java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¯üäıÿÿÿÿ
+t
+java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(•Ò Øÿÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+|	java:S116"bRename this field "TAsForEmailNotification" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤“ºÚıÿÿÿÿ
+u	java:S116"`Rename this field "TAsForSMSNotification" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÕìô
+h	java:S100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜í‹Íÿÿÿÿÿ
