@@ -10,6 +10,7 @@ public class TaskAddedEmailMessage {
 	
 	
 	public void addTeamDescription() {
-		
+				//add team description
+
 	}
 }

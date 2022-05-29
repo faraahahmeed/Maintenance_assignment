@@ -9,6 +9,6 @@ public class TaskAddedMobileMessage {
 	
 	
 	public void addTeamDescription() {
-		
+		//add team description
 	}
 }
