@@ -1,6 +1,8 @@
-package Messages;
+package announcement;
 
-public class GradesAnnouncementMobileMessage {
+import Notification.GradesAnnouncement;
+
+public class GradesAnnouncementMobileMessage implements GradesAnnouncement{
 
 	public String prepareMessage(String placeHolders[]) {
 		// code to replace place holders of this type
