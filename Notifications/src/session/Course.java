@@ -3,7 +3,9 @@ package session;
 
 import java.util.ArrayList;
 
+import Notification.TaskAdded;
 import communication.EmailGateway;
+import communication.Gateway;
 import announcement.TaskAddedEmailMessage;
 import consumer.Professor;
 import consumer.Student;
@@ -79,12 +81,12 @@ public class Course {
 
 	private void notifyAllUsers(String[] placeholders) {
 		// notify users by email
-		TaskAddedEmailMessage msg = new TaskAddedEmailMessage();
+		TaskAdded msg = new TaskAddedEmailMessage();
 		String notification = msg.prepareMessage(placeholders);
 		
 		// open connection for Email gateway and do some configurations to the object
 		
-		EmailGateway emailGateway = new EmailGateway();
+		Gateway emailGateway = new EmailGateway();
 		
 		
 		for (Professor professor : professorsForEmailNotification) {
