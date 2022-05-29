@@ -1,6 +1,8 @@
 package announcement;
 
-public class GradesAnnouncementEmailMessage {
+import Notification.GradesAnnouncement;
+
+public class GradesAnnouncementEmailMessage implements GradesAnnouncement{
 
 	public String prepareMessage(String [] placeHolders) {
 		// code to replace place holders of this type
