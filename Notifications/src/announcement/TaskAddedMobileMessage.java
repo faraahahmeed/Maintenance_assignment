@@ -1,6 +1,8 @@
 package announcement;
 
-public class TaskAddedMobileMessage {
+import Notification.TaskAdded;
+
+public class TaskAddedMobileMessage implements TaskAdded{
 
 	public String prepareMessage(String [] placeHolders) {
 		// code to replace place holders of this type
