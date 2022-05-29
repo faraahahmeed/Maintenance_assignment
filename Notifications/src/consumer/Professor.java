@@ -6,7 +6,7 @@ public class Professor {
 	String name;
 	String department;
 	Date hirringDate;
-	String PhDTopic;
+	String degree;
 	String email;
 	String phoneNumber;
 	
@@ -17,7 +17,7 @@ public class Professor {
 		this.name = name;
 		this.department = department;
 		this.hirringDate = hirringDate;
-		this.PhDTopic = phDTopic;
+		degree = phDTopic;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 	}
@@ -62,10 +62,10 @@ public class Professor {
 		this.hirringDate = hirringDate;
 	}
 	public String getPhDTopic() {
-		return PhDTopic;
+		return degree;
 	}
 	public void setPhDTopic(String phDTopic) {
-		this.PhDTopic = phDTopic;
+		degree = phDTopic;
 	}
 	
 	
