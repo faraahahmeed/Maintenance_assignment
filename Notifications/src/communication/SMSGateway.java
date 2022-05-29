@@ -1,8 +1,8 @@
-package Gateways;
+package communication;
 
-import Messages.DailyNewsMobileMessage;
-import Messages.GradesAnnouncementMobileMessage;
-import Messages.TaskAddedMobileMessage;
+import announcement.DailyNewsMobileMessage;
+import announcement.GradesAnnouncementMobileMessage;
+import announcement.TaskAddedMobileMessage;
 
 public class SMSGateway {
 	

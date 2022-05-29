@@ -1,10 +1,13 @@
+package seasion;
+
 import java.util.ArrayList;
 
-import Gateways.EmailGateway;
-import Messages.TaskAddedEmailMessage;
-import Users.Professor;
-import Users.Student;
-import Users.TA;
+import Notification.TaskAdded;
+import communication.EmailGateway;
+import announcement.TaskAddedEmailMessage;
+import consumer.Professor;
+import consumer.Student;
+import consumer.TA;
 
 public class Course {
 	
@@ -83,7 +86,7 @@ public class Course {
 
 	private void notifyAllUsers(String[] placeholders) {
 		// notify users by email
-		TaskAddedEmailMessage msg = new TaskAddedEmailMessage();
+		TaskAdded msg = new TaskAddedEmailMessage();
 		String notification = msg.prepareMessage(placeholders);
 		
 		// open connection for Email gateway and do some configurations to the object
