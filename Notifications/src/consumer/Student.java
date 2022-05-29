@@ -2,7 +2,7 @@ package consumer;
 
 public class Student {
 	String name;
-	int Id;
+	int identity;
 	String email;
 	String phoneNumber;
 	
@@ -11,7 +11,7 @@ public class Student {
 	public Student(String name, int id, String email, String phoneNumber) {
 		super();
 		this.name = name;
-		Id = id;
+		identity = id;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 	}
@@ -45,11 +45,11 @@ public class Student {
 	}
 
 	public int getId() {
-		return Id;
+		return identity;
 	}
 
 	public void setId(int id) {
-		Id = id;
+		identity = id;
 	}
 	
 	
