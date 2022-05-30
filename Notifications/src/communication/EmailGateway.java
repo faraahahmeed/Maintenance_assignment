@@ -1,11 +1,11 @@
 package communication;
 
-import notification.DailyNews;
-import notification.GradesAnnouncement;
-import notification.TaskAdded;
 import announcement.DailyNewsEmailMessage;
 import announcement.GradesAnnouncementEmailMessage;
 import announcement.TaskAddedEmailMessage;
+import notification.DailyNews;
+import notification.GradesAnnouncement;
+import notification.TaskAdded;
 
 public class EmailGateway implements Gateway{
 	

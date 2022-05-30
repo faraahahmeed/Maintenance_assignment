@@ -3,13 +3,13 @@ package session;
 
 import java.util.ArrayList;
 
-import notification.TaskAdded;
 import communication.EmailGateway;
 import communication.Gateway;
 import announcement.TaskAddedEmailMessage;
 import consumer.Professor;
 import consumer.Student;
 import consumer.TA;
+import notification.TaskAdded;
 
 public class Course implements ICourse{
 	

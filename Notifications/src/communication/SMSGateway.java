@@ -1,11 +1,11 @@
 package communication;
 
-import notification.DailyNews;
-import notification.GradesAnnouncement;
-import notification.TaskAdded;
 import announcement.DailyNewsMobileMessage;
 import announcement.GradesAnnouncementMobileMessage;
 import announcement.TaskAddedMobileMessage;
+import notification.DailyNews;
+import notification.GradesAnnouncement;
+import notification.TaskAdded;
 
 public class SMSGateway implements Gateway{
 	
