@@ -1,14 +1,17 @@
 package consumer;
 
 import java.sql.Date;
+import java.util.ArrayList;
 
-public class Professor {
+public class Professor implements IObserver {
 	String name;
 	String department;
 	Date hirringDate;
 	String degree;
 	String email;
 	String phoneNumber;
+	ArrayList <String> SMS= new ArrayList<String>();
+	ArrayList <String> Emails= new ArrayList<String>();
 	
 	
 	public Professor(String name, String department, Date hirringDate, String phDTopic, String email,
@@ -51,10 +54,17 @@ public class Professor {
 	}
 	
 	public void notifyProfessor(String message) {
-		// do some stuff
+		this.updateMe(message);
 		
 	}
 	
+	@Override
+	public void updateMe(String newUpdate)
+	{
+		SMS.add(newUpdate);
+		Emails.add(newUpdate);
+		System.out.println("you have a new update!: "+ newUpdate);
+	}
 	
 	
 }
