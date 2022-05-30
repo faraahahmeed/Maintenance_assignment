@@ -11,7 +11,7 @@ import consumer.Professor;
 import consumer.Student;
 import consumer.TA;
 
-public class Course {
+public class Course implements ICourse{
 	
 	String name;
 	String code;
@@ -43,27 +43,33 @@ public class Course {
 		return code;
 	}
 	
-	public void subscribeProfessorForEmailNotification(Professor professor) {
+	@Override
+	public void subscribeProfessorEmail(Professor professor) {
 		professorsForEmailNotification.add(professor);
 	}
 	
-	public void subscribeProfessorForSMSNotification(Professor professor) {
+	@Override
+	public void subscribeProfessorSMS(Professor professor) {
 		professorsForSMSNotification.add(professor);
 	}
 	
-	public void subscribeTAForEmailNotification(TA ta) {
+	@Override
+	public void subscribeTAEmail(TA ta) {
 		tasForEmailNotification.add(ta);
 	}
 	
-	public void subscribeTAForSMSNotification(TA ta) {
+	@Override
+	public void subscribeTASMS(TA ta) {
 		tasForSMSNotification.add(ta);
 	}
 	
-	public void subscribeStudentForEmailNotification(Student student) {
+	@Override
+	public void subscribeStudentEmail(Student student) {
 		studentsForEmailNotification.add(student);
 	}
 	
-	public void subscribeStudentForSMSNotification(Student student) {
+	@Override
+	public void subscribeStudentSMS(Student student) {
 		studentsForSMSNotification.add(student);
 	}
 	
@@ -71,15 +77,15 @@ public class Course {
 	
 	public void addAssignment(String assignName, String assignBody) {
 		announcements.add(assignName);
-		String[] placeholders = new String[] {assignName, assignBody};
-		// do some logic here 
+		String[] placeholders = new String[] {assignName, assignBody}; 
 		
 		notifyAllUsers(placeholders);
 	}
 	
 	// AddExam, PostGrades, PostAnnouncement  will be the same 
 
-	private void notifyAllUsers(String[] placeholders) {
+	@Override
+	public void notifyAllUsers(String[] placeholders) {
 		// notify users by email
 		TaskAdded msg = new TaskAddedEmailMessage();
 		String notification = msg.prepareMessage(placeholders);

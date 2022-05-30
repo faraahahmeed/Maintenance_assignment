@@ -1,11 +1,14 @@
 package consumer;
 
-public class Student {
+import java.util.ArrayList;
+
+public class Student implements IObserver{
 	String name;
 	int identity;
 	String email;
 	String phoneNumber;
-	
+	ArrayList <String> SMS= new ArrayList<String>();
+	ArrayList <String> Emails= new ArrayList<String>();
 	
 	
 	public Student(String name, int id, String email, String phoneNumber) {
@@ -34,9 +37,17 @@ public class Student {
 		return identity;
 	}
 	
-	
-	public void notifyStudent(String message) {
-		// do some stuff
+	public void notifyStudent(String message)
+	{
+		this.updateMe(message);
 	}
 	
+	
+	@Override
+	public void updateMe(String newUpdate)
+	{
+		SMS.add(newUpdate);
+		Emails.add(newUpdate);
+		System.out.println("you have a new update!: "+ newUpdate);
+	}
 }
