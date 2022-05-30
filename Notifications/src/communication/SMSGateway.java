@@ -1,8 +1,8 @@
 package communication;
 
-import Notification.DailyNews;
-import Notification.GradesAnnouncement;
-import Notification.TaskAdded;
+import notification.DailyNews;
+import notification.GradesAnnouncement;
+import notification.TaskAdded;
 import announcement.DailyNewsMobileMessage;
 import announcement.GradesAnnouncementMobileMessage;
 import announcement.TaskAddedMobileMessage;

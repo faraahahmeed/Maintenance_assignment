@@ -1,6 +1,6 @@
 package announcement;
 
-import Notification.DailyNews;
+import notification.DailyNews;
 
 public class DailyNewsEmailMessage implements DailyNews{
 	

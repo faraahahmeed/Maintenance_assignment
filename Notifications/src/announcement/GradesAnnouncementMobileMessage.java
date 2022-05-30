@@ -1,6 +1,6 @@
 package announcement;
 
-import Notification.GradesAnnouncement;
+import notification.GradesAnnouncement;
 
 public class GradesAnnouncementMobileMessage implements GradesAnnouncement{
 
