@@ -7,8 +7,8 @@ public class Student implements IObserver{
 	int identity;
 	String email;
 	String phoneNumber;
-	ArrayList <String> SMS= new ArrayList<String>();
-	ArrayList <String> Emails= new ArrayList<String>();
+	ArrayList <String> sms= new ArrayList<>();
+	ArrayList <String> emails= new ArrayList<>();
 	
 	
 	public Student(String name, int id, String email, String phoneNumber) {
@@ -46,8 +46,8 @@ public class Student implements IObserver{
 	@Override
 	public void updateMe(String newUpdate)
 	{
-		SMS.add(newUpdate);
-		Emails.add(newUpdate);
+		sms.add(newUpdate);
+		emails.add(newUpdate);
 		System.out.println("you have a new update!: "+ newUpdate);
 	}
 }
