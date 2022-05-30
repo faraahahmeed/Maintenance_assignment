@@ -47,8 +47,8 @@ public class TA implements IObserver {
 	@Override
 	public void updateMe(String newUpdate) 
 	{
-		SMS.add(newUpdate);
-		Emails.add(newUpdate);
+		sms.add(newUpdate);
+		emails.add(newUpdate);
 		System.out.println("you have a new update!: "+ newUpdate);
 		
 	}
