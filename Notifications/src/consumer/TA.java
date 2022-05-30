@@ -7,8 +7,8 @@ public class TA implements IObserver {
 	String department;
 	String email;
 	String phoneNumber;
-	ArrayList <String> SMS= new ArrayList<String>();
-	ArrayList <String> Emails= new ArrayList<String>();
+	ArrayList <String> sms= new ArrayList<>();
+	ArrayList <String> emails= new ArrayList<>();
 	
 
 	public TA(String name, String department, String email, String phoneNumber) {

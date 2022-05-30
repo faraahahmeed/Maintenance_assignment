@@ -2,5 +2,5 @@ projectKey=maintenance
 serverUrl=http://localhost:9000
 serverVersion=9.4.0.54424
 dashboardUrl=http://localhost:9000/dashboard?id=maintenance
-ceTaskId=AYEWVyx7nz7T6hgXhpZC
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYEWVyx7nz7T6hgXhpZC
+ceTaskId=AYEWmMJK6pCOA4iVZ9Dt
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYEWmMJK6pCOA4iVZ9Dt
