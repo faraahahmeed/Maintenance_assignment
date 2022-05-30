@@ -3,7 +3,7 @@ package session;
 
 import java.util.ArrayList;
 
-import Notification.TaskAdded;
+import notification.TaskAdded;
 import communication.EmailGateway;
 import communication.Gateway;
 import announcement.TaskAddedEmailMessage;

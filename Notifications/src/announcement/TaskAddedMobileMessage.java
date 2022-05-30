@@ -1,6 +1,6 @@
 package announcement;
 
-import Notification.TaskAdded;
+import notification.TaskAdded;
 
 public class TaskAddedMobileMessage implements TaskAdded{
 
